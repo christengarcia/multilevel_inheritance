@@ -27,4 +27,14 @@ namespace multilevel_inheritance
             Console.WriteLine("Student ID: {0}", id);
         }
     }
+
+    class Stud : Student
+    {
+        private string StudentAddress = "USA";
+        public void GetInfo()
+        {
+            base.GetInfo();
+            Console.WriteLine("Student Address: {0}", StudentAddress);
+        }
+    }
 }
