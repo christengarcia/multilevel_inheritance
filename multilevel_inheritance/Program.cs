@@ -37,4 +37,16 @@ namespace multilevel_inheritance
             Console.WriteLine("Student Address: {0}", StudentAddress);
         }
     }
+
+    class TestClass
+    {
+        public static void Main()
+        {
+            Student E = new Student();
+            E.GetInfo();
+            Stud Stud = new Stud();
+            Stud.GetInfo();
+            Console.ReadLine();
+        }
+    }
 }
