@@ -17,4 +17,14 @@ namespace multilevel_inheritance
             Console.WriteLine();
         }
     }
+
+    class Student : Person
+    {
+        public string id = "ABC";
+        public override void GetInfo()
+        {
+            base.GetInfo();
+            Console.WriteLine("Student ID: {0}", id);
+        }
+    }
 }
